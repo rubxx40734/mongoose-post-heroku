@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "7a8919a4-ed26-4e0e-8e08-a4e5ffc33831",
+		"name": "week2-post",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取的資料庫資料",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fierce-river-95955.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"fierce-river-95955",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增一筆資料庫資料",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\" : \"heroku測試\",\r\n    \"image\" : \"test\",\r\n    \"name\" : \"遊戲王\",\r\n    \"like\" : 87\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-river-95955.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"fierce-river-95955",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有資料庫",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://fierce-river-95955.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"fierce-river-95955",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆資料庫資料",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://fierce-river-95955.herokuapp.com/posts/6268ab142a7c41710b6bcf01",
+					"protocol": "https",
+					"host": [
+						"fierce-river-95955",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6268ab142a7c41710b6bcf01"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改單筆資料庫資料",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\" : \"九天玄女\",\r\n    \"image\" : \"url\",\r\n    \"name\" : \"test\",\r\n    \"like\" : 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-river-95955.herokuapp.com/posts/6268baed2dd362c48b80be6e",
+					"protocol": "https",
+					"host": [
+						"fierce-river-95955",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6268baed2dd362c48b80be6e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
